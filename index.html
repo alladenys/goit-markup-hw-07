@@ -16,7 +16,7 @@
                  <span class="logo1">Web</span><span class="logo2">Studio</span>
              </a>
              <ul class="list left-list">  
-                 <li class="link-item"><a class="link" href="#studio">Студия</a></li>
+                 <li class="link-item active"><a class="link" href="#studio">Студия</a></li>
                  <li class="link-item"><a class="link" href="portfolio.html">Портфолио</a></li>
                  <li class="link-item"><a class="link" href="#contacts">Контакты</a></li>
              </ul> 
@@ -44,9 +44,26 @@
               <button class="btn" type="button" data-modal-open>Заказать услугу</button>
               <div class="backdrop is-hidden" data-modal>
                   <div class="modal">
-                      <p>loren</p>
-                    <button class="button-clouse" data-modal-close>Закрыть</button>
-                  </div>
+                      <h3 class="modai-title">Оставьте свои данные, мы вам перезвоним</h3>
+                      <button class="button-clouse" data-modal-close>
+                          <svg class="icon-x">
+                             <use href="./icons/x-2.svg#icon-x"></use>
+                          </svg>
+                        </button>
+                      <form class="recole-form" id="recole-form">
+                        <label class="label-text">Имя<input type="text" class="recole-form-feald" name="user-name" pattern="^[А-Яа-яЁё\s]+$" required><svg class="svg-form1" height="12" width="12"><use href="./icons/sprit.svg#icon-person"></use></svg></label>
+                        <label class="label-text">Телефон<input type="tel" class="recole-form-feald" name="user-tel" pattern="[0-9]{6}" required><svg class="svg-form2" height="13" width="13"><use href="./icons/sprit.svg#icon-tel"></use></svg></label>
+                        <label class="label-text">Почта<input type="email" class="recole-form-feald" name="user-email" required><svg class="svg-form3" height="12" width="15"><use href="./icons/sprit.svg#icon-envel"></use></svg></label>
+                        <label class="label-text" for="coments">Комментарий</label>
+                        <textarea id="coments" class="recole-form-feald" cols="30" rows="9" name="user-coments" placeholder="Введите текст"></textarea>
+                        <div class="fake-checkbox">
+                        <input class="checkbox" type="checkbox" name="checkbox" id="fake" checked>
+                        <label class="fake" for="fake"></label><span>Соглашаюсь с рассылкой и принимаю</span>
+                        <a class="agreement-conditions" href="">Условия договора</a>
+                        </div>
+                        <button class="btn-send-recol" type="submit">Отправить</button>
+                      </form>
+                    </div>
               </div>
             </div>
         </div>
@@ -172,9 +189,11 @@
                 </svg></a>
             </li>
             <li class="client-logo">
-                <a class="client-logo-link"><svg class="client-logo-svg logo2">
-                    <use href="./icons/sprit.svg#icon-logo-2"></use>
-                </svg></a>
+                <a class="client-logo-link">
+                    <svg class="client-logo-svg logo2">
+                       <use href="./icons/sprit.svg#icon-logo-2"></use>
+                    </svg>
+                </a>
             </li>
             <li class="client-logo">
                 <a class="client-logo-link"><svg class="client-logo-svg logo3">
@@ -218,12 +237,23 @@
                   <div class="join-social">
                       <h3 class="join">присоединяйтесь</h3>
                       <ul class="social-icons">
-                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://instagram.com/" target="blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-instagram"></use></svg></a></li>
-                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://twitter.com/" target="blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-twitter"></use></svg></a></li>
-                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://facebook.com/" target="blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-facebook"></use></svg></a></li>
-                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://lincedin.com/" target="blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-linkedin"></use></svg></a></li>
-                      </ul>
+                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://instagram.com/" target="blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg-footer"><use href="./icons/sprit.svg#icon-instagram"></use></svg></a></li>
+                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://twitter.com/" target="blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg-footer"><use href="./icons/sprit.svg#icon-twitter"></use></svg></a></li>
+                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://facebook.com/" target="blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg-footer"><use href="./icons/sprit.svg#icon-facebook"></use></svg></a></li>
+                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://lincedin.com/" target="blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg-footer"><use href="./icons/sprit.svg#icon-linkedin"></use></svg></a></li>
+                        </ul>
                   </div>
+             </li>
+             <li>
+                 <div class="subscribe-newsletter">
+                     <h3 class="subscribe">Подпишитесь на рассылку</h3>
+                     <form class="subscribe-form" id="subscribe-form">
+                         <input type="email" class="form-feald" name="user-email" placeholder="E-mail" required>
+                         <button class="subscribe-btn" type="submit">Подписаться<svg class="svg-plain" width="24" height="24" fill="var(--wait-cl)">
+                             <use href="./icons/sprit.svg#icon-plain"></use>
+                         </svg></button>
+                     </form>
+                 </div>
              </li>
           </ul>
         </div>
