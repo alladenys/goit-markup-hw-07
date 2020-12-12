@@ -43,10 +43,10 @@
     list-style: none;
     width: 231px;
     display: inline-block;
-}
-.list-item:not(:last-child){
-    margin-bottom: 9px;
-    display: inline-block;
+    &:not(:last-child){
+        margin-bottom: 9px;
+        display: inline-block;
+    }
 }
 .contacts-list{
     margin-bottom: 9px;
@@ -75,17 +75,20 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-.client-logo:hover{
-    border: 1px solid var(--accent-cl);
+    &:hover{
+      border: 1px solid var(--accent-cl);
+    }
+    &:hover svg.client-logo-svg{
+      fill: var(--accent-cl);
+    }
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 .client-logo-link{
     display: flex;
     box-sizing: border-box;
     height: 90px;
-}
-.client-logo:hover svg.client-logo-svg{
-    fill: var(--accent-cl);
 }
 .client-logo-svg{
     text-align: center;
@@ -117,9 +120,6 @@
 .logo6{
     width: 89px;
     height: 46px;
-}
-.client-logo:not(:last-child){
-    margin-right: 30px;
 }
 .client-logo-link{
     justify-content: center;

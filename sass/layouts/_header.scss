@@ -23,22 +23,25 @@
 .link-item{
     height: 16px;
     font-weight: 500;
-    letter-spacing: 0.02em
-}
-.link-item:focus,
-.link-item:hover{
-   color: var(--accent-cl);
+    letter-spacing: 0.02em;
+    &:focus,
+    &:hover{
+       color: var(--accent-cl);
+    }
+    &:hover.link-item::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-cl);
+        margin-top: 22px;
+    }
+    &:not(:last-child){
+        margin-right: 50px;
+    }
 }
 nav.flex a.active{
     position: relative;
-}
-.link-item:hover.link-item::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-cl);
-    margin-top: 22px;
 }
 .active.link-item::after{
     content: "";
@@ -47,9 +50,6 @@ nav.flex a.active{
     height: 4px;
     background-color: var(--accent-cl);
     margin-top: 22px;
-}
-.link-item:not(:last-child){
-    margin-right: 50px;
 }
 .left-list {
     width: 343px;
@@ -80,14 +80,14 @@ nav.flex a.active{
     font-weight: 500;
     align-items: center;
     display: block;
-}
-.link-item-right:first-child{
-    margin-right: 30px;
-    width: 161px;
-}
-.link-item-right:last-child{
-    width: 142px;
-    width: 144px;
+    &:first-child{
+        margin-right: 30px;
+        width: 161px;
+    }
+    &:last-child{
+        width: 142px;
+        width: 144px;
+    }
 }
 .link-item-right:hover,
 svg.icon-header-item1:hover,
@@ -101,7 +101,6 @@ svg.icon-header-item2:hover{
     fill: var(--accent-cl);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .link:hover
 .link:focus{
     fill:var(--accent-cl);

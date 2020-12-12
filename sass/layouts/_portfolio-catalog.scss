@@ -42,30 +42,28 @@
     list-style-position:inside;
     width: 370px;
     height: 404px;
-}
-.flex-wrap-item:nth-child(3n+3){
-    margin-right: 0;
-}
-.flex-wrap-item:nth-child(n+7){
-    margin-bottom: 0;
-}
-.flex-wrap-item:hover{
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    &:nth-child(3n+3){
+      margin-right: 0;
+    }
+    &:nth-child(n+7){
+        margin-bottom: 0;
+    }
+    &:hover{
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    }
 }
 .img-portfolio-item{
     position: 0;
     width: 370px;
 }
-
 .portfolio-container-item li{
     display: inline-block;
     position: relative;
     overflow: hidden;
-}
-
-.portfolio-container-item img{
-    max-width: 100%;
-    display: block;
+    & img{
+        max-width: 100%;
+        display: block;
+    }
 }
 .description{
     position: absolute;

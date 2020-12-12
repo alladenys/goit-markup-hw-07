@@ -47,7 +47,6 @@
     margin-bottom: 16px;
     text-align: center;
     width: 270px;
-
 }
 .introduction {
     font-weight: 500;
@@ -90,9 +89,9 @@
     margin-top: 0;
     margin-right: 0;
     width: 270px;
-}
-.list-contacts-img:not(:last-child){
-    margin-right: 30px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 .list-position-item:not(:last-child){
    margin-right: 30px;

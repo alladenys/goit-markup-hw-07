@@ -26,16 +26,14 @@
     height: 70px;
     background-color: var(--bg-items);
     display: inline-block;
-}
-.features:hover{
-    fill: var(--accent-cl);
+    &:hover{
+       fill: var(--accent-cl);
+    }
 }
 .portfolio-list{
     display: flex;
     list-style: none;
 }
-
-
 .backgraund {
     padding-top: 200px;
     height: 600px;
