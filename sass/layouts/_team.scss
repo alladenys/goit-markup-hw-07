@@ -4,7 +4,7 @@
     font-size: 36px;
     line-height: 1.167;
     letter-spacing: 0.03em;
-    color: var(--black-cl);
+    color: $black-cl;
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
@@ -26,7 +26,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--main-text-cl);
+    color: $main-text-cl;
     width: 270px;
     margin-left: 0;
     padding-left: 0;   
@@ -42,7 +42,7 @@
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
-    color: var(--main-text-cl);
+    color: $main-text-cl;
     margin-top: 10px;
     margin-bottom: 16px;
     text-align: center;
@@ -53,7 +53,7 @@
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
-    color: var(--black-cl);
+    color: $black-cl;
 }
 .team-box{
     height: 648px;
@@ -85,7 +85,7 @@
     height: 428px;
 }
 .list-contacts-img{
-    background-color: var(--whait-cl);
+    background-color: $whait-cl;
     margin-top: 0;
     margin-right: 0;
     width: 270px;

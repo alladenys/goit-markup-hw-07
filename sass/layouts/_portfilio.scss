@@ -1,5 +1,5 @@
 .main {
-    background-color:var(--whait-cl);
+    background-color:$whait-cl;
     border: 1px solid #ECECEC
 }
 .portfolio-container{
@@ -14,7 +14,7 @@
 
 
 .item-backgraund{
-    background-color: var(--bg-items);
+    background-color: $bg-items;
     width: 270px;
     height: 120px;
     padding-top: 25px;
@@ -24,10 +24,10 @@
 .features{
     width: 65px;
     height: 70px;
-    background-color: var(--bg-items);
+    background-color: $bg-items;
     display: inline-block;
     &:hover{
-       fill: var(--accent-cl);
+       fill: $accent-cl;
     }
 }
 .portfolio-list{

@@ -15,7 +15,7 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color:var(--main-text-cl);
+    color:$main-text-cl;
     padding-left: 24px;
     padding-right: 24px;
     margin-top: 4px;
@@ -26,9 +26,9 @@
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-    background-color: var(--accent-cl);
-    color: var(--whait-cl);
-    border-color: var(--accent-cl);
+    background-color: $accent-cl;
+    color: $whait-cl;
+    border-color: $accent-cl;
 }
 .logo-position {
     padding: 0;
@@ -76,10 +76,10 @@
     justify-content: center;
     align-items: center;
     &:hover{
-      border: 1px solid var(--accent-cl);
+      border: 1px solid $accent-cl;
     }
     &:hover svg.client-logo-svg{
-      fill: var(--accent-cl);
+      fill: $accent-cl;
     }
     &:not(:last-child){
         margin-right: 30px;

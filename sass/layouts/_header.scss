@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;right: 0;
-    background-color: var(--whait-cl);
+    background-color: $whait-cl;
     z-index: 3;
     border: 1px solid #ECECEC;
 }
@@ -26,14 +26,14 @@
     letter-spacing: 0.02em;
     &:focus,
     &:hover{
-       color: var(--accent-cl);
+       color: $accent-cl;
     }
     &:hover.link-item::after{
         content: "";
         display: block;
         width: 100%;
         height: 4px;
-        background-color: var(--accent-cl);
+        background-color: $accent-cl;
         margin-top: 22px;
     }
     &:not(:last-child){
@@ -48,7 +48,7 @@ nav.flex a.active{
     display: block;
     width: 100%;
     height: 4px;
-    background-color: var(--accent-cl);
+    background-color: $accent-cl;
     margin-top: 22px;
 }
 .left-list {
@@ -66,7 +66,7 @@ nav.flex a.active{
     margin-right: 0;
     padding-inline-start: 0;
     margin-bottom: 0;
-    color: var(--main-text-cl);
+    color: $main-text-cl;
 }
 .link-item-right{
     margin-top: 2px;
@@ -92,18 +92,18 @@ nav.flex a.active{
 .link-item-right:hover,
 svg.icon-header-item1:hover,
 svg.icon-header-item2:hover{
-    color: var(--accent-cl);
-    fill: var(--accent-cl);
+    color: $accent-cl;
+    fill: $accent-cl;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-item-right:hover svg.icon-header-item1,
 .link-item-right:hover svg.icon-header-item2{
-    fill: var(--accent-cl);
+    fill: $accent-cl;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover
 .link:focus{
-    fill:var(--accent-cl);
+    fill:$accent-cl;
 }
 .icon-header{
     padding: 0;
@@ -116,7 +116,7 @@ svg.icon-header-item2:hover{
     height: 12px;
     margin-left: 0;
     margin-right: 10px;
-    fill:var(--main-text-cl);
+    fill:$main-text-cl;
     align-items: center;
 }
 
@@ -127,9 +127,9 @@ svg.icon-header-item2:hover{
     height: 16px;
     margin-left: 0;
     margin-right: 10px;
-    fill:var(--main-text-cl);
+    fill:$main-text-cl;
     align-items: center;
 }
 link:hover .icon-header-item2{
-    fill: var(--accent-cl);
+    fill: $accent-cl;
 }

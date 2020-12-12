@@ -5,9 +5,9 @@
     padding: 0;
     height: 100%;
     width: 100%;
-    fill: var(--black-cl);
+    fill: $black-cl;
     &:hover{
-      fill: var(--accent-cl);
+      fill: $accent-cl;
     }
 }
 .recole-form{
@@ -19,24 +19,24 @@
     position: absolute;
     top: 102px;
     left: 56px;
-    fill: var(--black-cl);
+    fill: $black-cl;
 }
 .svg-form2{
     position: absolute;
     top: 166px;
     left: 56px;
-    fill: var(--black-cl);
+    fill: $black-cl;
 }
 .svg-form3{
     position: absolute;
     top: 230px;
     left: 56px;
-    fill: var(--black-cl);
+    fill: $black-cl;
 }
 .svg-form1:hover,
 .svg-form2:hover,
 .svg-form3:hover{
-    fill: var(--accent-cl);
+    fill: $accent-cl;
 }
 
 .recole-form-feald{
@@ -45,7 +45,7 @@
     background: transparent;
     width: 448px;
     height: 40px;
-    color: var(--black-cl);
+    color: $black-cl;
     font-style: normal;
     font-size:16px;
     line-height: 1.25;
@@ -72,7 +72,7 @@ form.recole-form input.recole-form-feald{
 input.recole-form-feald:focus + svg.svg-form1,
 input.recole-form-feald:focus + svg.svg-form2,
 input.recole-form-feald:focus + svg.svg-form3{
-    fill: var(--accent-cl);
+    fill: $accent-cl;
 }
 .label-text{
     display: block;
@@ -138,7 +138,7 @@ label.fake{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--accent-cl);
+    color: $accent-cl;
 }
 .recole-form {
     &label{
@@ -169,9 +169,9 @@ label.fake{
     margin-left: 124px;
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 1 solid var(--accent-cl);
+    border: 1 solid $accent-cl;
     border-radius: 4px;
-    color: var(--whait-cl);
+    color: $whait-cl;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
