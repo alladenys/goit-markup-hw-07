@@ -65,16 +65,17 @@
 .svg-form3:hover{
     fill: $accent-cl;
 }
-
-textarea.recole-form-feald:hover,
-textarea.recole-form-feald:focus{
-    border: 1px solid #2196F3;
-    border-radius: 4px;
-    box-shadow: none;
-    outline: none;
-    cursor: pointer;
+textarea.recole-form-feald{
+    height: 120px;
+    &:hover,
+    &:focus{
+        border: 1px solid #2196F3;
+        border-radius: 4px;
+        box-shadow: none;
+        outline: none;
+        cursor: pointer;
+    }
 }
-
 form.recole-form input.recole-form-feald{
     position: relative;
 }

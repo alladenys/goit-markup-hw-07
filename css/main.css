@@ -251,8 +251,11 @@ body {
   fill: #2196F3;
 }
 
-textarea.recole-form-feald:hover,
-textarea.recole-form-feald:focus {
+textarea.recole-form-feald {
+  height: 120px;
+}
+
+textarea.recole-form-feald:hover, textarea.recole-form-feald:focus {
   border: 1px solid #2196F3;
   border-radius: 4px;
   box-shadow: none;
